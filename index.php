@@ -34,17 +34,41 @@
 			h4, p {
 				margin-top: 1%;
 				margin-left: 1%;
+				color: #ffffff;
+			}
+
+			h4 {
+				font-weight: bold;
 			}
 
 			div#form {
+					text-aling: center;
+					max-width: 430px;
+					margin: 0 auto 20px;
 					top: 20%;
 					left: 10%;
 					display: block;
 					position: absolute;
 				}
 
-			input {
-				width: 250px;
+			input#advname {
+				width: 300px;
+			}
+
+			a {
+				font-family: 'PT Serif Caption', serif;
+				text-decoration: none;
+				color: #dfdfdf;
+			}
+
+			a:hover {
+				color: #ffffff;
+				text-decoration: underline;
+			}
+
+			#beta {
+				display: inline;
+				font-size: 22px;
 			}
 		</style>
     
@@ -56,18 +80,25 @@
 	
 	<body>
 		
-		<h4>KATscrape</h4>
-		<p>A KAT cause list parser.</p>
+		<nav class="navbar navbar-dark bg-primary">
+		<h4>KATscrape<span><p id="beta"><sup>BETA</sup></p></span></h4>
+		<p>A KAT cause list parser. Developed by <a href="https://twitter.com/basilajith/" target="_blank">Basil Ajith.</a></p>
+		
+		</nav>
+
 		
 		
 		<div id="form">
 		    <form action="katscrape.php" method="post">
-					
-			 	<label for="advname">Enter your name as it appears in the KAT Cause List:</label><br />
-			 	<input type="text" id="advname" name="advname"></input><br /><br />
-					
+				
+				<div class="form-group>
+			 		<label for="advname">Enter your name as it appears in the KAT Cause List:</label><br />
+			 		<input type="text" id="advname" name="advname" required oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);"></input><br /><br />
+				</div>
+				<!--forcing all caps entry taken from: https://stackoverflow.com/a/49904823/6041444-->
+
 				<label for="cldate">Enter the date of the cause list:</label><br />
-				<input type="date" id="cldate" name="cldate"><br /><br />
+				<input type="date" id="cldate" name="cldate" required><br /><br />
 					
 				<button type="submit" class="btn btn-outline-primary">Submit</button>
 		    </form>
