@@ -8,7 +8,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-		<title>KATscrape (BETA)</title>
+		<title>KATscrape (BETA) | About</title>
 
 		<style>
 
@@ -40,13 +40,18 @@
 				text-decoration: underline;
 			}
 
-			#advname {
-				width: 325px;
+			h6 {
+				text-align: center;
+				font-weight: bold;
+			}
+
+			.blah {
+				margin: 40px;
 			}
 
 			.footer {
 				overflow: hidden;
-				position: fixed;
+				position: sticky;
 				left: 0;
 				bottom: 0;
 				width: 100%;
@@ -83,29 +88,31 @@
 			<p id="description">A Kerala Administrative Tribunal cause list 
 			parser. Developed by <a href="https://twitter.com/basilajith/" target="_blank">Basil Ajith.</a></p>
 		
-		<div id="form" class="card text-center">
-		    <form action="katscrape.php" method="post">
-				
-				<div class="form-group>
-			 		<label for="advname">Enter your name as it appears in the KAT Cause List:</label><br />
-			 		<input type="text" id="advname" name="advname" required oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);"></input><br /><br />
-				</div>
-				<!--forcing all caps entry taken from: https://stackoverflow.com/a/49904823/6041444-->
+			<h6>DISCLAIMER</h6>
 
-				<label for="cldate">Enter the date of the cause list:</label><br />
-				<input type="date" id="cldate" name="cldate" required><br /><br />
-					
-				<button type="submit" class="btn btn-outline-primary">Submit</button>
-		    </form>
-		</div>
+			<p class="text-justify blah">KATscrape is offered to you free of cost and is provided on an "AS IS" 
+			basis. Neither Basil Ajith nor Alfia Abubaker shall take on any liability for any harm or injury caused 
+			to you by the use of KATscrape.</p>
+
+			<p class="text-justify blah">As mentioned in the 'About' page, KATscrape is still in 'beta' phase and 
+			a lot more features are yet to be added in to the application. Neither Basil Ajith nor Alfia Abubaker makes 
+			any claim as to the accuracy of the search results shown by the application.</p>
+
+			<p class="text-justify blah">Certain errors may arise due to different anomalies present in the system maintained 
+			by the Kerala Administrative Tribunal's Registry. Neither Basil Ajith nor Alfia Abubaker shall take on any liability 
+			for any harm or injury caused to you because of such errors.</p>
+
+			<p class="text-justify blah">KATscrape has been developed by Basil Ajith. Neither Basil Ajith nor Alfia Abubaker is 
+			a staff of the Kerala Administrative Tribunal or its agent. KATscrape is not an official software application 
+			of the Kerala Administrative Tribunal.</p>
 
 		</main>
 
 		<footer>
 			<div class="footer">
-				<p>&#169; Copyright: <a href="https://twitter.com/basilajith/" target="_blank">Basil</a>+<a 
-				href="https://twitter.com/alfiaabubaker/" target="_blank">Alfia</a> | <a href="about.php">About</a> | <a 
-				href="disclaimer.php">Disclaimer</a> | <a href="https://github.com/pepalf/katscrape.git/">Github</a></p>
+			<p>&#169; Copyright: <a href="https://twitter.com/basilajith/" target="_blank">Basil</a>+<a 
+			href="https://twitter.com/alfiaabubaker/" target="_blank">Alfia</a> | <a href="about.php">About</a> | <a 
+			href="#">Disclaimer</a> | <a href="https://github.com/pepalf/katscrape.git/">Github</a></p>
 			</div>
 		</footer>
       </body>

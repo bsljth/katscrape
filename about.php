@@ -8,7 +8,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-		<title>KATscrape (BETA)</title>
+		<title>KATscrape (BETA) | About</title>
 
 		<style>
 
@@ -40,8 +40,8 @@
 				text-decoration: underline;
 			}
 
-			#advname {
-				width: 325px;
+			.blah {
+				margin: 40px;
 			}
 
 			.footer {
@@ -83,29 +83,23 @@
 			<p id="description">A Kerala Administrative Tribunal cause list 
 			parser. Developed by <a href="https://twitter.com/basilajith/" target="_blank">Basil Ajith.</a></p>
 		
-		<div id="form" class="card text-center">
-		    <form action="katscrape.php" method="post">
-				
-				<div class="form-group>
-			 		<label for="advname">Enter your name as it appears in the KAT Cause List:</label><br />
-			 		<input type="text" id="advname" name="advname" required oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);"></input><br /><br />
-				</div>
-				<!--forcing all caps entry taken from: https://stackoverflow.com/a/49904823/6041444-->
+			<p class="text-justify blah">KATscrape was originally developed as a Python script by Basil Ajith 
+			while he was practising in Trivandrum, appearing in KAT quite frequently. It was developed 
+			to parse through a day's cause list and identify how many cases his office had to attend on that 
+			day.</p>
 
-				<label for="cldate">Enter the date of the cause list:</label><br />
-				<input type="date" id="cldate" name="cldate" required><br /><br />
-					
-				<button type="submit" class="btn btn-outline-primary">Submit</button>
-		    </form>
-		</div>
+			<p class="text-justify blah">The simple Python script has now been developed into a web app; written 
+			in PHP. However, the current version is only in the 'beta' stage and a lot more features are yet to be 
+			added to the application. The source code to the application can be found at the application's Github 
+			repository (link below).</p>
 
 		</main>
 
 		<footer>
 			<div class="footer">
-				<p>&#169; Copyright: <a href="https://twitter.com/basilajith/" target="_blank">Basil</a>+<a 
-				href="https://twitter.com/alfiaabubaker/" target="_blank">Alfia</a> | <a href="about.php">About</a> | <a 
-				href="disclaimer.php">Disclaimer</a> | <a href="https://github.com/pepalf/katscrape.git/">Github</a></p>
+			<p>&#169; Copyright: <a href="https://twitter.com/basilajith/" target="_blank">Basil</a>+<a 
+			href="https://twitter.com/alfiaabubaker/" target="_blank">Alfia</a> | <a href="about.php">About</a> | <a 
+			href="disclaimer.php">Disclaimer</a> | <a href="https://github.com/pepalf/katscrape.git/">Github</a></p>
 			</div>
 		</footer>
       </body>
