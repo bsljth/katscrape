@@ -1,4 +1,4 @@
-# katscrape
+# KATscrape
 
 KATscrape was originally developed as a Python script by Basil Ajith while he was practising in Trivandrum, appearing in KAT quite frequently. It was developed to parse through a day's cause list and identify how many cases his office had to attend on that day.
 
