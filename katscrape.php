@@ -81,7 +81,7 @@ function katscrape() {
     foreach($court_numbers as $i) {
         //Getting the webpage content.
         //$dom = file_get_html("http://keralaadministrativetribunal.gov.in/ciskat/pages/cause_list_home.php?type=search&dte=%s/%s/%s&court=%s", $day, $month, $year, $i, false);
-        $url = "http://keralaadministrativetribunal.gov.in/ciskat/pages/cause_list_home.php?type=search&dte=".$day."/".$month."/".$year."&court=".$i;
+        $url = "http://keralaadministrativetribunal.gov.in/pages/cause_list_home.php?type=search&dte=".$day."/".$month."/".$year."&court=".$i;
         $lines_array=file($url);
         // turn array into one variable
         $lines_string=implode('',$lines_array);
