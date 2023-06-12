@@ -110,9 +110,9 @@
 
 		<footer>
 			<div class="footer">
-			<p>&#169; Copyright: <a href="https://twitter.com/basilajith/" target="_blank">Basil</a>+<a 
-			href="https://twitter.com/alfiaabubaker/" target="_blank">Alfia</a> | <a href="about.php">About</a> | <a 
-			href="#">Disclaimer</a> | <a href="https://github.com/pepalf/katscrape.git/">Github</a></p>
+			<p>&#169; Copyright: <a href="https://github.com/bsljth/" target="_blank">Basil</a>+<a 
+			href="https://twitter.com/alfiabasil/" target="_blank">Alfia</a> | <a href="about.php">About</a> | <a 
+			href="#">Disclaimer</a> | <a href="https://github.com/bsljth/katscrape.git/">Github</a></p>
 			</div>
 		</footer>
       </body>
