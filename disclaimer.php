@@ -86,7 +86,7 @@
 		
 		<main>
 			<p id="description">A Kerala Administrative Tribunal cause list 
-			parser. Developed by <a href="https://twitter.com/basilajith/" target="_blank">Basil Ajith.</a></p>
+			parser. Developed by <a href="https://github.com/bsljth/" target="_blank">Basil Ajith.</a></p>
 		
 			<h6>DISCLAIMER</h6>
 
