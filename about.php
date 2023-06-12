@@ -81,7 +81,7 @@
 		
 		<main>
 			<p id="description">A Kerala Administrative Tribunal cause list 
-			parser. Developed by <a href="https://twitter.com/basilajith/" target="_blank">Basil Ajith.</a></p>
+			parser. Developed by <a href="https://github.com/bsljth/" target="_blank">Basil Ajith.</a></p>
 		
 			<p class="text-justify blah">KATscrape was originally developed as a Python script by Basil Ajith 
 			while he was practising in Trivandrum, appearing in KAT quite frequently. It was developed 
