@@ -88,7 +88,7 @@
 				
 				<div class="form-group>
 			 		<label for="advname">Enter your name as it appears in the KAT Cause List:</label><br />
-			 		<input type="text" id="advname" name="advname" required oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);"></input><br /><br />
+			 		<input type="text" id="advname" name="advname" required></input><br /><br />
 				</div>
 				<!--forcing all caps entry taken from: https://stackoverflow.com/a/49904823/6041444-->
 
